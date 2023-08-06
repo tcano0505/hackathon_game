@@ -1,0 +1,99 @@
+*, *::before, *::after{
+    font-family:'Quicksand', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #98B4D4;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid{
+    display:grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn{
+    background-color: seashell;
+    border: 1px solid hsl(200, 100%, 20%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+}
+
+.btn:hover{
+    border-color: #98B4D4;
+}
+
+.Checklist{
+    display: flex;
+	flex-direction: column;
+	width: 300px;
+	box-shadow: 3px 3px 10px rgba(1, 1, 1, 0.15);
+	border-top: 5px solid #009578;
+	border-bottom: 5px solid #009578;
+    border-left: 5px solid #009578;
+    border-right: 5px solid #009578;
+    margin-top: 30px;
+}
+
+.todo {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+}
+
+.todoValue {
+	background: transparent;
+	border: none;
+	outline: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	flex-grow: 1;
+}
+
+.todo:has(.todo_checkbox:checked) {
+	color: #555555;
+	background: #eeeeee;
+	text-decoration: line-through;
+	order: 1;
+}
+
+.fa-dumbbell{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    margin-bottom: 30px;
+}
